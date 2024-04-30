@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Анализ текста бесплатно онлайн</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-image: url("/static/bg.jpg");
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class='header'>
+        <div class='header-line'>
+            <div class="header-logo">
+                <img src="/static/logo.png" width="150" height="150" alt="Логотип">
+                <p><b><i>Your Linguistic Company</i></b></p>
+            </div>
+        </div>
+    </div>
+    <h1 style="text-align: center"><b>Анализ текста</b></h1>
+    <p style="text-align: center"><i>На сайте Вы можете ввести свой текст для анализа</i></p>
+    <form action="/analyze_sentence/" method="post">
+        <fieldset>
+            <legend>ВВЕДИТЕ ТЕКСТ</legend>
+            <br>
+            <textarea name="sentence" cols="80" rows="7" placeholder="Введите текст"></textarea>
+            <br>
+            <input type="submit">
+            <br>
+            <br>
+            <fieldset>
+                <input type="checkbox" required>
+                Нажимая кнопку "Отправить" Вы даёте свое согласие на обработку введенной персональной информации в соответствии с Федеральным Законом №152-ФЗ от 27.07.2006 "О персональных данных"
+            </fieldset>
+        </fieldset>
+    </form>
+</body>
+</html>
